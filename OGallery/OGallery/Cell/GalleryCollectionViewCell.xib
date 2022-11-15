@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GalleryCollectionViewCell" customModule="OGallery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="291" height="197"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="291" height="197"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKO-xw-Mb6">
+                        <rect key="frame" x="5" y="5" width="281" height="187"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ban-zD-fCb">
+                                <rect key="frame" x="0.0" y="0.0" width="281" height="187"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ban-zD-fCb" secondAttribute="bottom" id="0Mf-e4-21O"/>
+                            <constraint firstItem="ban-zD-fCb" firstAttribute="top" secondItem="aKO-xw-Mb6" secondAttribute="top" id="Qta-65-3NY"/>
+                            <constraint firstItem="ban-zD-fCb" firstAttribute="leading" secondItem="aKO-xw-Mb6" secondAttribute="leading" id="cEW-Za-QvW"/>
+                            <constraint firstAttribute="trailing" secondItem="ban-zD-fCb" secondAttribute="trailing" id="qB6-Sm-7hb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="cornerRadius" value="10"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="aKO-xw-Mb6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Stz-2r-D1z"/>
+                <constraint firstAttribute="bottom" secondItem="aKO-xw-Mb6" secondAttribute="bottom" constant="5" id="XM4-hl-aMX"/>
+                <constraint firstItem="aKO-xw-Mb6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="ka1-Tr-YDS"/>
+                <constraint firstAttribute="trailing" secondItem="aKO-xw-Mb6" secondAttribute="trailing" constant="5" id="wUR-XM-ea7"/>
+            </constraints>
+            <size key="customSize" width="291" height="197"/>
+            <connections>
+                <outlet property="imgPoster" destination="ban-zD-fCb" id="faB-ot-SSq"/>
+            </connections>
+            <point key="canvasLocation" x="306.52173913043481" y="92.745535714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
