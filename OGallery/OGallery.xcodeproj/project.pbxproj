@@ -28,6 +28,7 @@
 		564FD36E292357BD000B236C /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564FD36D292357BD000B236C /* DetailVC.swift */; };
 		564FD37429235B69000B236C /* DetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564FD37229235B69000B236C /* DetailCollectionViewCell.swift */; };
 		564FD37529235B69000B236C /* DetailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 564FD37329235B69000B236C /* DetailCollectionViewCell.xib */; };
+		564FD37A29236C02000B236C /* GalleryModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564FD37929236C02000B236C /* GalleryModelTest.swift */; };
 		5CCE5B9F7D94FD6628F89A96 /* Pods_OGalleryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5A047B9547981C606FA8556 /* Pods_OGalleryTests.framework */; };
 		E8E178F518A54CDA4036BE6C /* Pods_OGallery_OGalleryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0EC36BCA04934AD524105B9 /* Pods_OGallery_OGalleryUITests.framework */; };
 		EE1143ED6BAADFD948F50C54 /* Pods_OGallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F54BE40756D69DFD4C2A9737 /* Pods_OGallery.framework */; };
@@ -77,6 +78,7 @@
 		564FD36D292357BD000B236C /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		564FD37229235B69000B236C /* DetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		564FD37329235B69000B236C /* DetailCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCollectionViewCell.xib; sourceTree = "<group>"; };
+		564FD37929236C02000B236C /* GalleryModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryModelTest.swift; sourceTree = "<group>"; };
 		63DCDCB0E0890B67344D033C /* Pods-OGalleryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OGalleryTests.release.xcconfig"; path = "Target Support Files/Pods-OGalleryTests/Pods-OGalleryTests.release.xcconfig"; sourceTree = "<group>"; };
 		721D2C079BEF3BEA0CF33A7E /* Pods-OGalleryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OGalleryTests.debug.xcconfig"; path = "Target Support Files/Pods-OGalleryTests/Pods-OGalleryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		73F2945E2806C6AA086F2091 /* Pods-OGallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OGallery.debug.xcconfig"; path = "Target Support Files/Pods-OGallery/Pods-OGallery.debug.xcconfig"; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				5635E56D292341A200A8DB78 /* Model */,
 				5635E566292340E300A8DB78 /* ViewModel */,
 				5635E53C2921F31200A8DB78 /* Main.storyboard */,
+				564FD37629236B85000B236C /* UnitTests */,
 				5635E53F2921F31400A8DB78 /* Assets.xcassets */,
 				5635E5702923422A00A8DB78 /* WebService */,
 				5635E5412921F31400A8DB78 /* LaunchScreen.storyboard */,
@@ -236,6 +239,14 @@
 				564FD36429235019000B236C /* GalleryCollectionViewDelegate.swift */,
 			);
 			path = GalleryCV;
+			sourceTree = "<group>";
+		};
+		564FD37629236B85000B236C /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				564FD37929236C02000B236C /* GalleryModelTest.swift */,
+			);
+			path = UnitTests;
 			sourceTree = "<group>";
 		};
 		9FC8DAF5FFEBBED328FF41A0 /* Pods */ = {
@@ -512,6 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				564FD37A29236C02000B236C /* GalleryModelTest.swift in Sources */,
 				5635E54E2921F31400A8DB78 /* OGalleryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
